@@ -41,7 +41,10 @@
         </button>
     </form>
     <?php
-    echo "O resultado da divisão é: ".$resultado;
+        if(isset($_POST['primeiroNumero'])){
+            echo $resultado;
+        }else{
+            echo "Preencha os campos!";}
     ?>
 </body>
 </html>

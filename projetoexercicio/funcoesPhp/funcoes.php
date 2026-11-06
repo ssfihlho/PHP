@@ -54,7 +54,7 @@
         public function delta(int $a, int $b, int $c){
             $delta = pow($b,2)-4*$a*$c;
             return $delta;
-        }//Fim do metodo Delta
+        }//fim do delta
 
         public function calcularX1X2(int $a, int $b, int $c){
             $del = $this->delta($a,$b,$c);    
@@ -79,7 +79,49 @@
             $soma = $num1 + $num2 + $num3;
             $this->resultado = $soma / 3;
             return $this->resultado;
+        } //Fim do método
+
+        public function raizQuadrada(int $num1){
+            $this-> resultado = sqrt($num1);
+
+            return $this->resultado;
+        }//Fim do método Raiz Quadrada
+
+        public function conversorMetrosCentimentros(float $num1){
+            $this->resultado = $num1 * 100;
+            return $this-> resultado;
+        }// Fim do método 
+
+        public function calcularAreaRaio(float $r){
+        $area = M_PI*(pow($r,2));
+        $this->resultado = $area;
+        return $this->resultado;
+            
+        }//Fim do método
+
+        public function converterCelsiusFh(float $celsius){
+            $farenheit = $celsius * 1.8 + 32;
+            $this->resultado = $farenheit;
+            return $this->resultado;
+        }//Fim do método
+
+        public function descontoCom10(float $valor){
+            $desconto = $valor * 0.1;
+            $this->resultado = $valor - $desconto;
+            return $this->resultado;
+        }//Fim do método
+
+        public function idadeEmMeses(int $idade){
+            $this->resultado = $idade * 12;
+            return $this->resultado;
+        }//Fim do método
+
+        public function numeroImpar(float $num){
+            if ($num % 2 == 0){
+                return "Número par!";
+            }else{ return "Número impar!";}
         }
+
     }//Fim da Classe
 
 
