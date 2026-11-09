@@ -26,5 +26,15 @@
     <button><a href="telas/descontoSerasa.php">Aplicar 10% de desconto num produto</a></button>
     <button><a href="telas/idadeEmmeses.php">Exibir idade em meses</a></button>
     <button><a href="telas/impaPa.php">Par ou Ímpar</a></button>
+    <button><a href="telas/areaTriangulo.php">Ache a área de um triângulo utilizando a base e a altura</a></button>
+    <button><a href="telas/retangulo.php">Ache o volume de uma caixa retângular</a></button>
+    <button><a href="telas/cuboQuadrado.php">Descubra o cubo e o Quadrado de um número</a></button>
+    <button><a href="telas/impoxto.php">Adicionar 18% de imposto sobre um valor</a></button>
+    <button><a href="telas/velo.php">Leia a distância e o tempo, e calcule a velocidade média.</a></button>
+    <button><a href="telas/mediaDoisNum.php">Calcular Média de dois números.</a></button>
+    <button><a href="telas/salarin.php">Calcular salário mensal.</a></button>
+    <button><a href="telas/idadeAnoDias.php">Exibir idade em dias</a></button>
+    <button><a href="telas/tempoDeVidaRestante.php">Exibir tempo de vida restante até os 100 anos</a></button>
+    <button><a href="telas/somaEMedia.php">Calcular Média e Soma</a></button>
 </body>
 </html>

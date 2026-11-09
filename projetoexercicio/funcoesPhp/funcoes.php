@@ -120,7 +120,70 @@
             if ($num % 2 == 0){
                 return "Número par!";
             }else{ return "Número impar!";}
-        }
+        }//Fim do método
+
+        public function acheTriangulo(float $base, float $altura){
+            $area = ($base * $altura) / 2;
+            $this->resultado = $area;
+            return $this->resultado;
+        }//Fim do método
+
+        public function acheVolumeRetangulo(float $compr, float $larg, float $alt){
+            $volume = $compr * $larg * $alt;
+            $this->resultado = $volume;
+            return $this->resultado;
+        }//Fim do método
+
+        public function quadradoCubicoDeNum(float $num){
+            $qdd = pow($num,2);
+            $cbc = $num ** 3;
+        
+            return "Quadrado: $qdd <br><br> Cubo: $cbc ";
+        }//Fim do método
+
+        public function imposto(float $preço){
+            $imposto = ($preço * 0.18);
+            $valorTotal = $imposto + $preço;
+
+            return  "Foi adicionado: <strong>R$$imposto</strong> em impostos <br>
+                     E o valor total da divída: <strong> R$$valorTotal. </strong>";
+        }//Fim do método
+        public function velocidadeMedia(float $distancia, float $tempo){
+            $velocidadeM = ($distancia / $tempo);
+
+            $this->resultado = $velocidadeM;
+            return $this->resultado;
+        }//Fim do método
+
+        public function media2num(float $num1, float $num2){
+            $media = ($num1 + $num2) / 2;
+            $this->resultado = $media;
+            return $this->resultado;
+        }//Fim do método
+        public function salarioMensal(float $valorDaHora, int $hora, int $dias){
+
+            $salario = ($valorDaHora * $hora) * $dias;
+            $this->resultado = $salario;
+            return $this->resultado;
+
+
+        }//Fim do método
+
+        public function idadeEmDias(int $idade){
+            $this->resultado = 365 * $idade;
+            return $this->resultado;
+        }//Fim do método
+
+        public function tempoDeVida(int $idade){
+            $this->resultado = 100 - $idade;
+            return $this->resultado;
+        }//Fim do método
+
+        public function calcularMediaeSoma(int $num1, int $num2, int $num3){
+            $soma = $num1 + $num2 + $num3;
+            $this->resultado = $soma / 3;
+            return "A soma é: $soma. <br> A média é: $this->resultado.";
+        } //Fim do método
 
     }//Fim da Classe
 
