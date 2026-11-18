@@ -36,5 +36,15 @@
     <button><a href="telas/idadeAnoDias.php">Exibir idade em dias</a></button>
     <button><a href="telas/tempoDeVidaRestante.php">Exibir tempo de vida restante até os 100 anos</a></button>
     <button><a href="telas/somaEMedia.php">Calcular Média e Soma</a></button>
+
+    <h1>Lista de Exercicios de Repetição</h1>
+    <button><a href="telas/crescenteContagem.php">Contagem Crescente.</a></button>
+    <button><a href="telas/regressivaContagem.php">Contagem Decrescente.</a></button>
+    <button><a href="telas/nSoma.php">Soma dos números de 1 até N.</a></button>
+    <button><a href="telas/7multiplos.php">Multiplos de 7.</a></button>
+    <button><a href="telas/tabu.php">Tabuada.</a></button>
+    <button><a href="telas/media8.php">Média 8.</a></button>
+
+
 </body>
 </html>

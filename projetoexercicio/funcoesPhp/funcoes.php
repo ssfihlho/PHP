@@ -185,6 +185,73 @@
             return "A soma é: $soma. <br> A média é: $this->resultado.";
         } //Fim do método
 
+        public function contagemCrescente(int $num){
+          
+        for($i = 0; $i <= $num; $i++){
+                echo "$i ";
+            }
+            echo ".";
+            
+        }//Fim do metodo
+
+
+        public function contagemRegressiva(int $num){
+            for($i= $num; $i >= 0; $i--){
+                echo "$i ";
+            }
+        }//Fim do método
+
+        public function somaN(int $num){
+            $soma = 0;
+            for($i = 1; $i <= $num;$i++){
+                $soma = $soma + $i;
+            }
+            $this->resultado = $soma;
+            return $this->resultado;
+
+        }//Fim do método
+
+        public function multiplosDe7(int $num){
+            $resultado = "";
+            for ($i = 1; $i <= 100; $i++){
+                   if($i % $num == 0){
+                    $resultado .= $i . "<br>";
+                   }
+                }
+                return $resultado;
+            } // Fim do método
+
+        public function tabuada(int $num) {
+            $resultado = "";
+    
+            for($i = 1; $i <= 10; $i++) {
+                $multiplicacao = $num * $i;
+    
+                $resultado .= "$num x $i = $multiplicacao <br>";
+            }
+    
+            return $resultado;
+        }//Fim do método tabuada
+
+        public function mediaOitoNotas(array $notas) {
+        $soma = 0;
+ 
+        for($i = 0; $i < 8; $i++) {
+            $soma += $notas[$i];
+        }
+ 
+        $media = $soma / 8;
+ 
+        if($media >= 7) {
+            return "Média: $media - Aprovado!";
+        } else {
+            return "Média: $media - Reprovado!";
+        }
+    }//Fim metodo media notas
+        
+
+
+
     }//Fim da Classe
 
 
