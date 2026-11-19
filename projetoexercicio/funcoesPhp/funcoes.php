@@ -51,21 +51,28 @@
             }
         }//Fim do método DIVIDIR
     
-        public function delta(int $a, int $b, int $c){
-            $delta = pow($b,2)-4*$a*$c;
-            return $delta;
-        }//fim do delta
+     public function delta(int $a, int $b, int $c) {
+        $delta = pow($b, 2) - 4 * $a * $c;
+        return $delta;
+    }
 
-        public function calcularX1X2(int $a, int $b, int $c){
-            $del = $this->delta($a,$b,$c);    
-            if ($del < 0){
-                    return "Impossível calcular X1 e X2, delta negativo!";
-                }else{
-                    $x1 = (-$b + sqrt($del))/2*$a;
-                    $x2 = (-$b - sqrt($del))/2*$a;
-                    return "X1 = $x1 <br><br> X2 = $x2";
-                }
-        }//Fim do método 
+    public function calcularX1X2(int $a, int $b, int $c) {
+
+        if ($a == 0) {
+            return "O valor de A não pode ser zero!";
+        }
+
+        $delta = $this->delta($a, $b, $c);
+
+        if ($delta < 0) {
+            return "Impossível calcular X1 e X2, delta negativo!";
+        } else {
+            $x1 = (-$b + sqrt($delta)) / (2 * $a);
+            $x2 = (-$b - sqrt($delta)) / (2 * $a);
+
+            return "X1 = $x1 <br><br> X2 = $x2";
+        }
+    }
 
 
 
@@ -221,6 +228,18 @@
                 return $resultado;
             } // Fim do método
 
+        public function contarNumerosPares(array $numeros): string {
+            $contador = 0;
+
+            foreach ($numeros as $numero) {
+                if ($numero % 2 == 0) {
+                    $contador++;
+                }
+            }
+
+            return "Quantidade de números pares: " . $contador;
+            }
+
         public function tabuada(int $num) {
             $resultado = "";
     
@@ -249,7 +268,79 @@
         }
     }//Fim metodo media notas
         
+        public function analisarTemperaturas(array $temperaturas) {
+        $soma = 0;
+        $contador = 0;
 
+        for($i = 0; $i < 7; $i++) {
+            $soma += $temperaturas[$i];
+
+            if($temperaturas[$i] > 30) {
+                $contador++;
+            }
+        }
+
+        $media = $soma / 7;
+
+        return "Média das temperaturas: $media <br>
+                Dias acima de 30 graus: $contador";
+    }//for 8
+
+
+    
+    public function somaImpares(int $num1) {
+        $resultado = 0;
+
+        for($i = 1; $i <= $num1; $i++) {
+            if($i % 2 != 0) {
+                $resultado += $i;
+            }
+        }
+
+        return $resultado;
+    }//for 9
+
+
+    
+    public function calcularFatorial(int $num1) {
+        $resultado = 1;
+
+        for($i = 1; $i <= $num1; $i++) {
+            $resultado *= $i;
+        }
+
+        return $resultado;
+    }//for 10
+
+
+    
+    public function somaQuadrados(int $num1) {
+        $resultado = 0;
+
+        for($i = 1; $i <= $num1; $i++) {
+            $resultado += pow($i, 2);
+        }
+
+        return $resultado;
+    }//for 11
+
+
+    
+    public function divisibilidadeTres(array $numeros) {
+        $divisiveis = 0;
+        $naoDivisiveis = 0;
+
+        for($i = 0; $i < 30; $i++) {
+            if($numeros[$i] % 3 == 0) {
+                $divisiveis++;
+            } else {
+                $naoDivisiveis++;
+            }
+        }
+
+        return "Divisíveis por 3: $divisiveis <br>
+                Não divisíveis por 3: $naoDivisiveis";
+    }// for 12
 
 
     }//Fim da Classe

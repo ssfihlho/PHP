@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+    font-family: "Calibri", Helvetica, sans-serif;
+}
+
+
+
+nav{
+    font-size: 19px;
+    height: 70px;
+}
+
+nav ul{
+    list-style-type: none;
+
+}
+
+nav ul li{
+    float: left;
+    margin-left: 15px;
+    padding: 5px 10px; /* Espaçamento Interno */
+    font-weight: bold;
+    line-height: 3.3;
+    color: aliceblue;
+}
+
+nav ul .BOTAO:hover{    /*ESTADO HOVER É QUANDO PASSAMOS O MOUSE SOBRE O OBJETO*/
+    background-color: rgba(255, 255, 255, 0.2);
+
+}
+#banner{
+    padding-top: 70px;
+    margin-bottom: 10px;
+}
+
+main{
+    
+    width: 1000px;
+    margin: 0 auto;
+}
